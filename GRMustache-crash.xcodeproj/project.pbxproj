@@ -6,62 +6,341 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DA99537D151B7D3C0061CEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA99537C151B7D3C0061CEB0 /* UIKit.framework */; };
+		DA99537F151B7D3C0061CEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA99537E151B7D3C0061CEB0 /* Foundation.framework */; };
+		DA995381151B7D3C0061CEB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA995380151B7D3C0061CEB0 /* CoreGraphics.framework */; };
+		DA995387151B7D3C0061CEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA995385151B7D3C0061CEB0 /* InfoPlist.strings */; };
+		DA995389151B7D3C0061CEB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA995388151B7D3C0061CEB0 /* main.m */; };
+		DA99538D151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99538C151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.m */; };
+		DA995390151B7D3C0061CEB0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA99538E151B7D3C0061CEB0 /* MainWindow.xib */; };
+		DA9953B4151B7DE30061CEB0 /* libGRMustache1-ios4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9953B1151B7DE30061CEB0 /* libGRMustache1-ios4.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA995378151B7D3C0061CEB0 /* GRMustache-crash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GRMustache-crash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99537C151B7D3C0061CEB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA99537E151B7D3C0061CEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA995380151B7D3C0061CEB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA995384151B7D3C0061CEB0 /* GRMustache-crash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRMustache-crash-Info.plist"; sourceTree = "<group>"; };
+		DA995386151B7D3C0061CEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA995388151B7D3C0061CEB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA99538A151B7D3C0061CEB0 /* GRMustache-crash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRMustache-crash-Prefix.pch"; sourceTree = "<group>"; };
+		DA99538B151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRMustache_crashAppDelegate.h; sourceTree = "<group>"; };
+		DA99538C151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRMustache_crashAppDelegate.m; sourceTree = "<group>"; };
+		DA99538F151B7D3C0061CEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DA99539E151B7DA60061CEB0 /* GRBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRBoolean.h; sourceTree = "<group>"; };
+		DA99539F151B7DA60061CEB0 /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache.h; sourceTree = "<group>"; };
+		DA9953A0151B7DA60061CEB0 /* GRMustacheAvailabilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheAvailabilityMacros.h; sourceTree = "<group>"; };
+		DA9953A1151B7DA60061CEB0 /* GRMustacheContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheContext.h; sourceTree = "<group>"; };
+		DA9953A2151B7DA60061CEB0 /* GRMustacheDateFormatterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheDateFormatterHelper.h; sourceTree = "<group>"; };
+		DA9953A3151B7DA60061CEB0 /* GRMustacheEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheEnvironment.h; sourceTree = "<group>"; };
+		DA9953A4151B7DA60061CEB0 /* GRMustacheError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheError.h; sourceTree = "<group>"; };
+		DA9953A5151B7DA60061CEB0 /* GRMustacheInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheInvocation.h; sourceTree = "<group>"; };
+		DA9953A6151B7DA60061CEB0 /* GRMustacheLambda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheLambda.h; sourceTree = "<group>"; };
+		DA9953A7151B7DA60061CEB0 /* GRMustacheNumberFormatterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheNumberFormatterHelper.h; sourceTree = "<group>"; };
+		DA9953A8151B7DA60061CEB0 /* GRMustacheSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheSection.h; sourceTree = "<group>"; };
+		DA9953A9151B7DA60061CEB0 /* GRMustacheTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplate.h; sourceTree = "<group>"; };
+		DA9953AA151B7DA60061CEB0 /* GRMustacheTemplateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateDelegate.h; sourceTree = "<group>"; };
+		DA9953AB151B7DA60061CEB0 /* GRMustacheTemplateLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateLoader.h; sourceTree = "<group>"; };
+		DA9953AC151B7DA60061CEB0 /* GRMustacheTemplateLoader_protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateLoader_protected.h; sourceTree = "<group>"; };
+		DA9953AD151B7DA60061CEB0 /* GRMustacheUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheUtils.h; sourceTree = "<group>"; };
+		DA9953AE151B7DA60061CEB0 /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheVersion.h; sourceTree = "<group>"; };
+		DA9953B1151B7DE30061CEB0 /* libGRMustache1-ios4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGRMustache1-ios4.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA995375151B7D3C0061CEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA99537D151B7D3C0061CEB0 /* UIKit.framework in Frameworks */,
+				DA99537F151B7D3C0061CEB0 /* Foundation.framework in Frameworks */,
+				DA995381151B7D3C0061CEB0 /* CoreGraphics.framework in Frameworks */,
+				DA9953B4151B7DE30061CEB0 /* libGRMustache1-ios4.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		DA995364151B7BB70061CEB0 = {
+		DA99536D151B7D3C0061CEB0 = {
 			isa = PBXGroup;
 			children = (
+				DA995382151B7D3C0061CEB0 /* GRMustache-crash */,
+				DA99539C151B7D960061CEB0 /* GRMustache */,
+				DA99537B151B7D3C0061CEB0 /* Frameworks */,
+				DA995379151B7D3C0061CEB0 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		DA995379151B7D3C0061CEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA995378151B7D3C0061CEB0 /* GRMustache-crash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA99537B151B7D3C0061CEB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA99537C151B7D3C0061CEB0 /* UIKit.framework */,
+				DA99537E151B7D3C0061CEB0 /* Foundation.framework */,
+				DA995380151B7D3C0061CEB0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA995382151B7D3C0061CEB0 /* GRMustache-crash */ = {
+			isa = PBXGroup;
+			children = (
+				DA99538B151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.h */,
+				DA99538C151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.m */,
+				DA99538E151B7D3C0061CEB0 /* MainWindow.xib */,
+				DA995383151B7D3C0061CEB0 /* Supporting Files */,
+			);
+			path = "GRMustache-crash";
+			sourceTree = "<group>";
+		};
+		DA995383151B7D3C0061CEB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA995384151B7D3C0061CEB0 /* GRMustache-crash-Info.plist */,
+				DA995385151B7D3C0061CEB0 /* InfoPlist.strings */,
+				DA995388151B7D3C0061CEB0 /* main.m */,
+				DA99538A151B7D3C0061CEB0 /* GRMustache-crash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA99539C151B7D960061CEB0 /* GRMustache */ = {
+			isa = PBXGroup;
+			children = (
+				DA9953AF151B7DE30061CEB0 /* lib */,
+				DA99539D151B7DA60061CEB0 /* include */,
+			);
+			name = GRMustache;
+			sourceTree = "<group>";
+		};
+		DA99539D151B7DA60061CEB0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DA99539E151B7DA60061CEB0 /* GRBoolean.h */,
+				DA99539F151B7DA60061CEB0 /* GRMustache.h */,
+				DA9953A0151B7DA60061CEB0 /* GRMustacheAvailabilityMacros.h */,
+				DA9953A1151B7DA60061CEB0 /* GRMustacheContext.h */,
+				DA9953A2151B7DA60061CEB0 /* GRMustacheDateFormatterHelper.h */,
+				DA9953A3151B7DA60061CEB0 /* GRMustacheEnvironment.h */,
+				DA9953A4151B7DA60061CEB0 /* GRMustacheError.h */,
+				DA9953A5151B7DA60061CEB0 /* GRMustacheInvocation.h */,
+				DA9953A6151B7DA60061CEB0 /* GRMustacheLambda.h */,
+				DA9953A7151B7DA60061CEB0 /* GRMustacheNumberFormatterHelper.h */,
+				DA9953A8151B7DA60061CEB0 /* GRMustacheSection.h */,
+				DA9953A9151B7DA60061CEB0 /* GRMustacheTemplate.h */,
+				DA9953AA151B7DA60061CEB0 /* GRMustacheTemplateDelegate.h */,
+				DA9953AB151B7DA60061CEB0 /* GRMustacheTemplateLoader.h */,
+				DA9953AC151B7DA60061CEB0 /* GRMustacheTemplateLoader_protected.h */,
+				DA9953AD151B7DA60061CEB0 /* GRMustacheUtils.h */,
+				DA9953AE151B7DA60061CEB0 /* GRMustacheVersion.h */,
+			);
+			name = include;
+			path = GRMustache/include;
+			sourceTree = "<group>";
+		};
+		DA9953AF151B7DE30061CEB0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DA9953B1151B7DE30061CEB0 /* libGRMustache1-ios4.a */,
+			);
+			name = lib;
+			path = GRMustache/lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		DA995377151B7D3C0061CEB0 /* GRMustache-crash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA995393151B7D3C0061CEB0 /* Build configuration list for PBXNativeTarget "GRMustache-crash" */;
+			buildPhases = (
+				DA995374151B7D3C0061CEB0 /* Sources */,
+				DA995375151B7D3C0061CEB0 /* Frameworks */,
+				DA995376151B7D3C0061CEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GRMustache-crash";
+			productName = "GRMustache-crash";
+			productReference = DA995378151B7D3C0061CEB0 /* GRMustache-crash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
-		DA995366151B7BB70061CEB0 /* Project object */ = {
+		DA99536F151B7D3C0061CEB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = nKey;
 			};
-			buildConfigurationList = DA995369151B7BB70061CEB0 /* Build configuration list for PBXProject "GRMustache-crash" */;
+			buildConfigurationList = DA995372151B7D3C0061CEB0 /* Build configuration list for PBXProject "GRMustache-crash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DA995364151B7BB70061CEB0;
+			mainGroup = DA99536D151B7D3C0061CEB0;
+			productRefGroup = DA995379151B7D3C0061CEB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				DA995377151B7D3C0061CEB0 /* GRMustache-crash */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DA995376151B7D3C0061CEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA995387151B7D3C0061CEB0 /* InfoPlist.strings in Resources */,
+				DA995390151B7D3C0061CEB0 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA995374151B7D3C0061CEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA995389151B7D3C0061CEB0 /* main.m in Sources */,
+				DA99538D151B7D3C0061CEB0 /* GRMustache_crashAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA995385151B7D3C0061CEB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA995386151B7D3C0061CEB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA99538E151B7D3C0061CEB0 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA99538F151B7D3C0061CEB0 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		DA99536B151B7BB70061CEB0 /* Debug */ = {
+		DA995391151B7D3C0061CEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		DA99536C151B7BB70061CEB0 /* Release */ = {
+		DA995392151B7D3C0061CEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA995394151B7D3C0061CEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRMustache-crash/GRMustache-crash-Prefix.pch";
+				INFOPLIST_FILE = "GRMustache-crash/GRMustache-crash-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GRMustache/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA995395151B7D3C0061CEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRMustache-crash/GRMustache-crash-Prefix.pch";
+				INFOPLIST_FILE = "GRMustache-crash/GRMustache-crash-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GRMustache/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA995369151B7BB70061CEB0 /* Build configuration list for PBXProject "GRMustache-crash" */ = {
+		DA995372151B7D3C0061CEB0 /* Build configuration list for PBXProject "GRMustache-crash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA99536B151B7BB70061CEB0 /* Debug */,
-				DA99536C151B7BB70061CEB0 /* Release */,
+				DA995391151B7D3C0061CEB0 /* Debug */,
+				DA995392151B7D3C0061CEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA995393151B7D3C0061CEB0 /* Build configuration list for PBXNativeTarget "GRMustache-crash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA995394151B7D3C0061CEB0 /* Debug */,
+				DA995395151B7D3C0061CEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DA995366151B7BB70061CEB0 /* Project object */;
+	rootObject = DA99536F151B7D3C0061CEB0 /* Project object */;
 }
