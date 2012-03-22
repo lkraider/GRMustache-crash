@@ -7,6 +7,7 @@
 //
 
 #import "GRMustache_crashAppDelegate.h"
+#import "GRMustache.h"
 
 @implementation GRMustache_crashAppDelegate
 
@@ -47,6 +48,8 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    [GRMustache setDefaultTemplateOptions:GRMustacheTemplateOptionMustacheSpecCompatibility];
+    NSLog(@"%@", [GRMustacheTemplate renderObject:[NSDictionary dictionaryWithObject:@"rendered" forKey:@"key"] fromString:@"Key is {{key}}" error:nil]);
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
