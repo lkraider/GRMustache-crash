@@ -1,0 +1,3 @@
+[submodule "GRMustache"]
+	path = GRMustache
+	url = git://github.com/groue/GRMustache.git
